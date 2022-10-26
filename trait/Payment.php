@@ -5,10 +5,10 @@ require_once __DIR__ . './trait/CreditCard.php';
 
 trait Payment
 {
-    public $lat;
-    public $lng;
-    public function getAddress()
+
+
+    public function Payed()
     {
-        return $address;
+        echo 'Il prodotto è stato pagato!';
     }
 }

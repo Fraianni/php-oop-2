@@ -5,13 +5,17 @@ class Registered extends User
 {
     public $user;
     protected $password;
-    public $registered = true;
 
 
 
-    public function Register($_user, $_password)
+    function __construct($_user, $_password)
     {
         $this->user = $_user;
         $this->password = $_password;
+    }
+
+    public function Pay()
+    {
+        $Card = new CreditCard("Pippo", "pippo@email.it", 80);
     }
 }
